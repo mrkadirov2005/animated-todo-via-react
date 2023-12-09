@@ -1,0 +1,58 @@
+@keyframes zoomIn {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+.plus100 {
+  color: white;
+  background-color: black;
+  padding: 6px 15px;
+}
+.plus100:hover {
+  background-color: red;
+  animation-name: zoomIn;
+  animation-duration: 10s;
+}
+.reset {
+  background-color: rgb(48, 1, 1);
+  content: " hello";
+  padding: 7px 17px;
+  font-size: 15px;
+}
+
+.reset:hover {
+  background-color: red;
+  animation-name: zoomIn;
+  animation-duration: 10s;
+}
+.plus {
+  margin: 5px;
+  padding: 15px 25px;
+}
+.plus:hover {
+  animation-name: zoomIn;
+  animation-duration: 10s;
+}
+.minus {
+  margin: 5px;
+  padding: 15px 25px;
+}
+.minus:hover {
+  animation-name: zoomIn;
+  animation-duration: 10s;
+}
+.count {
+  font-size: 25px;
+  color: rgb(178, 165, 165);
+  padding: 15px 25px;
+  margin-top: 5px;
+  background-image: radial-gradient(black, blue);
+}
+.count:hover {
+  animation-name: zoomIn;
+  animation-duration: 10s;
+}

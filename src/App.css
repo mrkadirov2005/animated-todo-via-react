@@ -1,0 +1,16 @@
+.container-wrapper {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  width: 90%;
+  height: auto;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(10, 3, 38) !important;
+}

@@ -1,0 +1,29 @@
+@keyframes changer {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: green;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(47, 43, 47);
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 8px 8px;
+  color: rgb(119, 115, 115);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.button:hover {
+  color: white;
+  background-color: rgb(15, 15, 46);
+  animation-name: changer;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}

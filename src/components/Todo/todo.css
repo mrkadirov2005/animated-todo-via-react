@@ -1,0 +1,101 @@
+@keyframes errorAppearance {
+  from {
+    color: green;
+    background-color: rgb(77, 46, 164);
+    border: none;
+  }
+  to {
+    color: grey !important;
+    border: grey;
+    opacity: 0.6;
+  }
+}
+@keyframes newItem {
+  from {
+    transform: scale(1.5);
+    background-color: rgb(42, 42, 75);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes total {
+  from {
+    transform: skew(15deg);
+  }
+  to {
+    transform: skew(-15deg);
+  }
+}
+
+html {
+  width: 1550px;
+  background-color: rgb(0, 3, 52);
+  height: 100vh;
+}
+.containerMain {
+  width: 102%;
+  height: auto;
+  padding: 60px;
+  background-color: rgb(84, 79, 79) !important;
+  border: 5px solid rgb(14, 2, 58);
+}
+.input {
+  width: 75%;
+  background-color: rgb(4, 22, 38) !important;
+  outline: none;
+  border-radius: 15px;
+  padding: 15px;
+  cursor: cursor;
+  color: white;
+  font-weight: 700;
+}
+.input:active {
+  background-color: green !important;
+}
+.todos {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 9px;
+}
+.liEl {
+  width: 77%;
+  color: white;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid white;
+  background-color: rgb(78, 78, 84);
+  padding: 10px 15px;
+  margin: 0;
+  animation-name: newItem;
+  animation-duration: 5s;
+}
+.liEl:hover {
+  background-color: rgb(190, 166, 166);
+  color: blue;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.error {
+  width: 50%;
+  color: rgb(216, 97, 97);
+  padding: 5px;
+  border: 2px solid rgb(193, 19, 19);
+  animation-name: errorAppearance;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  margin: 5px;
+}
+.total:hover {
+  animation-name: total;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  color: orange;
+}
